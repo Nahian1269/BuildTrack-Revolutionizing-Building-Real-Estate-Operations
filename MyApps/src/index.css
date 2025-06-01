@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root{
+  background-color: aliceblue;
+}
+
