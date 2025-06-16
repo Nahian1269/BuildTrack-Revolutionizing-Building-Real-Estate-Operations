@@ -1,9 +1,12 @@
 import React from "react";
 import "./Header.css";
+import { Hammer, User, Code, Truck, Building2 } from "lucide-react";
+
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
+    <div className=" pt-5 bg-slate-300 pb-10">
       <div className="main navbar  text-black ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -39,10 +42,16 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className=" logo ml-4 text-xl font-bold">BuildTrack</a>
+          <div className="flex text-center gap-3">
+            <div className="flex justify-center mb-6">
+              <Hammer className="h-13 w-13  text-amber-500" />
+            </div>
+            <h1 className="text-4xl font-bold text-black mb-4">BuildTracks</h1>
+          </div>
         </div>
+
         <div className="nav navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-bold">
+          <ul className="menu menu-horizontal px-1 text-xl font-bold">
             <li>
               <a>Home</a>
             </li>
@@ -56,9 +65,11 @@ const Header = () => {
         </div>
 
         <div className="navbar-end">
-          <a className="log btn mr-4 rounded-4xl text-xl  bg-amber-400  text-black px-7">
-            Login
-          </a>
+          <NavLink to="/role">
+            <a className="log btn mr-4 rounded-4xl text-2xl  bg-amber-400  text-black px-7">
+              Login
+            </a>
+          </NavLink>
         </div>
       </div>
     </div>
