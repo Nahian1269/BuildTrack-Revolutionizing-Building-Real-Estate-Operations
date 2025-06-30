@@ -12,7 +12,7 @@ const RoleSelector = () => {
       description: 'Access your projects, tasks, and documentation',
       icon: User,
       color: 'bg-blue-500 hover:bg-blue-600',
-      path: '/user_dash'
+      path: '/Uselogin'
     },
     {
       id: 'developer',
@@ -20,7 +20,7 @@ const RoleSelector = () => {
       description: 'Manage projects, teams, and development resources',
       icon: Code,
       color: 'bg-green-500 hover:bg-green-600',
-      path: '/dev_dash'
+      path: '/dev_login'
     },
     {
       id: 'supplier',
